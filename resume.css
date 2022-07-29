@@ -4,6 +4,73 @@
 
 body {
     margin: 0;
+    padding: 10px;
     height: 100%;
-    background-color: orange;
+    background-color: snow;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(3, 1fr) 2fr 1fr ;
+}
+
+.title {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.photo {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.jobTitle {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.areaOfExpertise {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+.bio {
+    grid-column: 2 / 3;
+    grid-row: 2;
+ }
+
+.professionalHistory {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+ }
+
+.educationalHistory {
+    grid-column: 2;
+    grid-row: 5 / 6;
+ }
+ 
+.contactInfo {
+    grid-column: 1;
+    grid-row: 3 / 6;
+    background-color: #0096FF;
+    justify-content: space-between;
+    align-content: center;
+    color: aliceblue;
+ }
+
+ h1 {
+    border-bottom: 2px solid;
+    border-bottom-width: thin;
+    width: 75%;
+ }
+
+ header {
+    margin: 10px;
+    font-size: 58px;
+    color: #0096FF;
+ }
+
+ section {
+    margin: 10px;
+ }
